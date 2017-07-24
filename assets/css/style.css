@@ -107,7 +107,7 @@
 	}
 
 	#profilePic {
-		margin: 10px; /*Ten pixel margin around photo*/
+		margin: 4px 10px 10px; /*Ten pixel margin around photo*/
 		float:left; /*Floats so text can go around it*/
 		height: 200px; /*Set height to 200 pixels*/
 		width: 200px; /*Set height to 200 pixels*/
@@ -221,8 +221,10 @@
 	/*Formats the pictures*/
 	.AnnabellePic {
 		/*Height and width of 150 and 200 pixels*/
-		width: 200px;
-		height: 150px;
+		max-width: 80%;
+		width: auto;
+		height: auto;
+		/*height: 150px;*/
 		/*Gives a slight border*/
 		border: 1px solid #ccc;
 		/*Gives a small margin between photos*/
@@ -326,6 +328,7 @@
 
 		#profilePic {
 			float: none;
+			max-width: 100%;
 			height: auto;
 			width: auto;
 			height: calc(100%-100px);
