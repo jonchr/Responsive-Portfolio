@@ -1,0 +1,355 @@
+
+/*Styling used in all pages*/
+
+	/*General formatting for the page*/
+	body {
+		background-image: url("../images/redox_01.png"); /*Sets background image*/
+		color: #777777; /*Sets default page text color*/
+		font-family: 'Arial'; /*Sets default page font*/
+	}
+	
+	/*Sets header white color and bottom border*/
+	header {
+		background-color: #ffffff; /*Sets header background color*/
+		
+		/*Sets bottom border width, style, and color of header*/
+		border-bottom: 2px solid #cccccc; 
+	}
+
+	/* Keeps the buttons within the margins of the page*/
+	#headerMargins {
+		margin: 0px 250px 0px 100px; /*Sets side margins for header elements*/
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/*Defines equal spacing of menu buttons*/
+	#spacing {
+
+		/*Positioning info*/
+		position: absolute; /*Puts it in its place*/
+		left: 719px; 
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	/*Formatting for the button with my name on it*/
+	#nameButton {
+		/*Name Button text formatting*/
+		color: white; /*Sets text color for button*/
+		font-family: 'Georgia'; /*Sets button font*/
+		font-size: 24px; /*Sets text size for button*/
+		font-weight: bolder; /*Sets text bold for button*/
+		letter-spacing: 1px; /*Increases kerning slightly*/
+		text-decoration: none; /*Removes default text decoration*/
+		text-align: center; /*Centers name within button*/
+		
+		/*Name Button Formatting*/
+		float: left; /*Floats name button left so header is 1 row*/
+		background-color: #4aaaa5;
+		padding: 20px 25px;
+	}
+	
+	/*Formatting for little grey lines between menu buttons*/
+	.verticalLine {
+		/*Sets height, width, and style of lines*/
+		height: 20px; /*sets 20 px tall*/
+		border-left: 1px solid #777777; /*sets width, style, and color*/
+	}
+	
+	/*Formatting for menu buttons in header*/
+	.menuButton {
+	
+		color: #777777; /*Sets font color to light grey*/
+		font-family: 'Arial'; /*Sets font to Arial*/
+		text-align: center; /*Aligns text in center of button*/
+		text-decoration: none; /*Removes underline*/
+		line-height: 24px; /*Sets line height so they align with namebutton*/
+		padding: 20px 25px; /*See above comment but for padding*/
+	}
+	
+	/*Sets the page size such that there is a sticky footer*/
+	#pageWrap {
+		/*Sets height of main content to be page height minus 60 px*/
+		min-height: calc(100vh-60px);
+		/*Sets margins for main content */
+		margin: 0px 250px 0px 100px; 
+	}
+
+	/*Formatting that creates the white page the main content rests on */
+	.mainPage {
+		/*Color info*/
+		background-color: white; /*Sets page to white*/
+		border: 1px solid lightgrey; /*Sets border to 1 px all around light grey*/
+		line-height: 24px; /*Sets line height for main content*/
+
+		/*Positioning info*/
+		width: 500px; /*Sets width to 500 pixels*/
+		margin: 40px 25px 100px 0px; /*Sets margins for external spacing*/
+		padding: 20px 25px; /*Sets padding for internal spacing*/
+	}
+	
+	/*Formatting for headers of two focus sections*/
+	h1 {
+		/*Text formatting*/
+		color: #4aaaa5; /*Sets text color to teal*/
+		font-family: 'Georgia'; /*Sets font*/
+		font-size: 24px; /*Sets font to 24px*/
+		font-weight: bold; /*Bolds text*/
+		line-height: 20px; /*Sets line height*/
+		
+		/*Positioning formatting*/	
+		padding: 0px 0px 20px; /*Gives extra padding at bottom above line*/
+		border-bottom: 1px solid lightgrey; /*Sets line underneath header*/
+		margin-bottom: 20px; /*Gives extra margin below line*/
+	}
+
+	#profilePic {
+		margin: 10px; /*Ten pixel margin around photo*/
+		float:left; /*Floats so text can go around it*/
+		height: 200px; /*Set height to 200 pixels*/
+		width: 200px; /*Set height to 200 pixels*/
+	}
+	
+	/*Formatting for Aside section that contains Connect With Me icons*/
+	aside {
+		/*Color info*/
+		background-color: white; /*Makes section white*/
+		border: 1px solid lightgrey; /*Sets border settingss*/
+		
+		/*Positioning info*/
+		position: absolute; /*Puts it in its place*/
+		left: 719px; 
+		top: 66px;
+		width: 270px;
+
+		margin: 40px 0px 100px 0px;
+		padding: 20px;
+
+		/*Sets grid for two rows of items*/
+		display: grid;
+		grid-template-rows: 1fr 1fr; /*sets two rows*/
+	}
+	
+	/*Div to space icons on second row of Aside section*/
+	#secondRow {
+		/*Sets grid for three columns of items*/
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr; /*sets three columns*/
+		width: 270px;
+	}
+	
+	/*Sets image size and margins for Aside icon links*/
+	.imgLinks {
+		height: 60px; /*Sets height to 60*/
+		width: 65px; /*Sets width to 65*/
+		margin: 0px 13px; /*Sets margins to put space in between*/
+	}
+	
+	/*Footer color and stickiness formatting*/
+	footer {
+		/*Size formatting*/
+		width: 100%; /*set to 100% of page width*/
+		height: 18px; /*text item is 18px tall*/
+		padding: 20px 0px;
+		
+		/*Color formatting*/
+		background-color: #666666; /*sets background to grey*/
+		border-top: 8px solid #4aaaa5; /*sets border line at top*/
+		
+		/*Text formatting*/
+		color: white; /*sets copyright text to white*/
+		font-family: sans-serif; /*sets text to sans-serif font*/
+		font-size: 12px; /*sets copyright font size*/
+		text-align: center; /*aligns in center of footer*/
+	}
+
+/*Contact Page Styling*/
+
+	/*Styling used for Name and Email input boxes*/
+	#nameBox, #emailBox {
+		font-size: 14px;
+	    width: 100%; /* Full width */
+	    padding: 12px; /* Some padding */  
+	    border: 1px solid #ccc; /* Gray border */
+	    border-radius: 4px; /* Rounded borders */
+	    box-sizing: border-box; /* Make sure that padding and width stays in place */
+	    margin-top: 6px; /* Add a top margin */
+	    margin-bottom: 16px; /* Bottom margin */
+	    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+	}
+	
+	/*Styling used for general message input box*/
+	#messageBox {
+		font-size: 14px;
+		width: 98.3%; /*Same width in the end as above inputboxes*/
+		height: 150px; /*Reasonably height*/
+		resize: none; /*Prevents resizing*/
+		border: 1px solid #ccc; /*Sets border to match above boxes*/
+		border-radius: 4px; /*Gives rounded corners like above boxes*/
+	}
+	
+	/*Formatting for the submit button in its default state*/
+	input[type=submit] {
+		font-size: 14px;
+		background-color: #4aaaaf; /*Sets button to teal*/
+	    color: white; /*White text on the button*/
+	    padding: 12px 20px; /*Some padding, more on the sides*/
+	    border: none; /*No border needed*/
+	    border-radius: 4px; /*Rounded corners*/
+	    cursor: pointer; /*I don't know what this does*/
+	}
+	
+	/*Formatting for when the mouse is over the submit button*/
+	input[type=submit]: hover {
+		background-color: #45a049; /*Sets button to green*/
+	    
+	}
+
+/*Styling for Portfolio page*/
+	
+	/*Div Section for Grid display of photos*/
+	#photos {
+		display: grid;
+		/*Sets up a 3 rows of 2 columns of photos*/
+		grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+		margin: auto; /*Centers the photos in the section*/
+	}
+	
+	/*Formats the pictures*/
+	.AnnabellePic {
+		/*Height and width of 150 and 200 pixels*/
+		width: 200px;
+		height: 150px;
+		/*Gives a slight border*/
+		border: 1px solid #ccc;
+		/*Gives a small margin between photos*/
+		margin: 10px 11px;
+	}
+
+	/*Layout and format adjustments for when screen is below 768 pixel width*/
+	@media screen and (max-width: 768px) {
+
+		#headerMargins {
+			margin: 0px 15px;
+		}
+
+		header {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+	
+		#spacing {
+			position: static;
+		}
+
+		#pageWrap {
+			margin: 0px auto;
+		}
+	
+		.mainPage {
+			width: auto;
+			padding: 15px;
+			margin: 15px;
+		}
+		
+		h1 {
+			text-align: left !important;
+		}
+
+		aside {
+			position: static;
+			width: auto;
+			margin: 0px 15px 10px;
+		}
+
+		#messageBox {
+			width: 99%; /*Same width in the end as above inputboxes*/
+			justify-content: center;
+		}
+
+		.AnnabellePic {
+			margin: 10px 10px;
+
+		}
+	}
+
+	/*Layout and format adjustments for when screen is below 640 pixel width*/
+	@media screen and (max-width: 640px) {
+
+		header {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#headerMargins{
+			margin: 0px;
+			display: initial;
+		}
+
+		#nameButton {
+			width: 100%;
+			padding: 20px 0px;
+		}
+
+		#spacing {
+			width: 100%;
+			position: static;
+			justify-content: space-around;
+
+		}
+		
+		.verticalLine {
+			border-style: none;
+		}
+		.menuButton {
+			padding: 5px 25px;
+		}
+		
+		#pageWrap {
+			margin: 0px auto;
+		}
+
+		.mainPage {
+			width: auto;
+			padding: 15px;
+			margin: 15px;
+		}
+		
+		h1 {
+			text-align: left !important;
+		}
+
+		#profilePic {
+			float: none;
+			height: auto;
+			width: auto;
+			height: calc(100%-100px);
+			margin: auto;
+		}
+
+		aside {
+			position: static;
+			width: auto;
+			margin: 0px 15px 10px;
+
+		}
+
+		#secondRow {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		.imgLinks {
+			margin: 0px 13px;
+		}
+		
+		#messageBox {
+			width: 98%; /*Same width in the end as above inputboxes*/
+		}
+	}

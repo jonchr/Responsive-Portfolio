@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Declares CSS reset and style sheets for formatting -->
+ 	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">	
+	<!-- Specifies that my website is UTF-8 character set -->
+	<meta charset="UTF-8">
+	<!-- Titles my page in tabs and for search engines -->
+	<title>Jon's Contact Info</title>
+
+</head>
+
+<body>
+	
+	<header>
+
+		<!-- Code for my website's white header, including my name and menu buttons -->
+		<div id="headerMargins">
+			<a href="./index.html" id="nameButton">Jon Christensen</a>
+			<div id="spacing">
+				<a href="./index.html" class="menuButton">About</a>
+				<div class="verticalLine"></div>
+				<a href="./portfolio.html" class="menuButton">Portfolio</a>
+				<div class="verticalLine"></div>
+				<a href="./contact.html" class="menuButton">Contact</a>
+			</div>
+		</div>
+
+	</header>		
+	
+	<!-- div box for central content of the page -->
+	<div id="pageWrap">
+		
+		<!-- div box for the focal section of the page -->
+		<div class="mainPage">
+			
+			<!-- div box for the focal content-->
+			<div class="mainText">
+				
+				<!-- focal content title -->			
+				<h1>Contact Me</h1>
+				
+				<!-- Contact info form -->
+				<form action="mailto:jonathan.lee.christensen@gmail.com" method="post" enctype="text/plain">
+	          		
+	          		<!-- Name Input Box -->
+	          		<div>
+			            <label for="nameBox">Name</label>
+			            <br />
+			            <input type="text" id="nameBox" size = "70" placeholder="John Smith">
+	          		</div>
+					
+					<!-- Email Input Box -->
+		          	<div>
+			            <label for="emailBox">Email Address</label>
+			            <br />
+			            <input type="email" id="emailBox" size = "70" placeholder="example@gmail.com">
+		          	</div>
+					
+					<!-- Message Input Box -->
+		          	<div>
+			            <label for="messageBox">Message</label>
+			            <br />
+			            <textarea id="messageBox"></textarea>
+		          	</div>
+
+		          	<!-- Submit Button -->
+		          	<input type="submit" value="Submit">		   
+		        </form>
+			</div>		
+		</div>
+
+		<!-- aside section containing links to profile -->
+		<aside>
+
+			<!-- "Connect with Me" section header; centered -->
+			<h1 style="text-align: center;">Connect with Me</h1>
+
+			<!-- Div box to evenly space icons on second row -->
+			<div id="secondRow">
+				<!-- Icon for my LinkedIn page -->
+				<a href="https://linkedin.com/in/jonlchristensen/" target="_blank" class="imgLinks"><img src="./assets/images/if_social_media_logo_linkedin_1078324.svg" alt="LinkedIn profile"></a>
+				<!-- Icon for my GitHub profile -->
+				<a href="https://github.com/jonchr" target="_blank" class="imgLinks"><img src="./assets/images/if_github_social_media_online_1006758.svg" alt="Github profile"></a>
+				<!-- Icon for my StackOverflow -->
+				<a href="https://stackoverflow.com/users/8303324/jon-christensen" target="_blank" class="imgLinks"><img src="./assets/images/if_stack_1287510.svg" alt="Link to StackOverflow"></a>
+			</div>
+		</aside>
+	</div>
+
+	<!-- Sticky footer for bottom of page -->
+	<footer>
+		&#x24B8 Copyright 2017 Jon Christensen
+	</footer>
+	
+</body>
+
+</html>
