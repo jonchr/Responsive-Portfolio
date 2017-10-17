@@ -9,7 +9,7 @@ Similar to the [previous version](https://github.com/jonchr/Basic-Portfolio), th
 	Portfolio - displays pictures of my dog, Annabelle, since I did not yet have many projects to show
 	Contact Me - contains a form that opens a new email in your default mail app
 
-Each page contains a header with links to all pages at the top, a section on the right with links to my LinkedIn, Github, and StackOverflow profiles, and a sticky footer.
+Each page contains a header with links to all pages at the top, a section on the right with links to my LinkedIn, Github, and StackOverflow profiles, and a sticky footer. Each page has the same responsive layout: a default layout, a single column layout at 768px wide, and thinnest layout at 640px.
 
 ### Development
 
@@ -24,5 +24,9 @@ This page uses the Meyerweb Reset CSS file v2.0 available to the public domain a
 The background image for this page is **Redox 01** and was used with permission from https://www.toptal.com/designers/subtlepatterns/redox-01/
 
 ## Screenshots
-### Main/About Page
+### Main/About Page, default width
 ![Main Page](assets/images/main_page.png)
+### Main/About Page, 768 pixels wide
+![Main Page](assets/images/main_page_768w.png)
+### Main/About Page, 640 pixels wide
+![Main Page](assets/images/main_page_640w.png)
