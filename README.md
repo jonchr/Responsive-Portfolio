@@ -1,5 +1,5 @@
 # Responsive-Portfolio
-This is a resposive version of my original website built solely using HTML5 and CSS3. A live version can be viewed at https://jonchr.github.io/Responsive-Portfolio
+This is a responsive version of my original website built solely using HTML5 and CSS3. A live version can be viewed at https://jonchr.github.io/Responsive-Portfolio
 
 ## Description
 
